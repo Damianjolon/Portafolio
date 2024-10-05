@@ -1,0 +1,87 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Card from '../components/Card.astro'
+import Badge from '../components/Badge.astro'
+import LinkedInIcon from '../components/icons/LinkedIn.astro'
+import SocialPill from '../components/SocialPill.astro'
+import GitHubIcon from '../components/icons/GitHub.astro'
+import MailIcon from '../components/icons/Mail.astro'
+import Experience from '../components/Experience.astro'
+import SectionContainer from '../components/SectionContainer.astro'
+import BriefCase from '../components/icons/BriefCase.astro'
+import CodeIcon from '../components/icons/Code.astro'
+import Projects from '../components/Projects.astro'
+
+---
+
+<Layout 
+title="Portafolio de Oliver - Desarrollador Junior FrontEnd."
+description='Contrata a Oliver para crear aplicaciones web'
+>
+
+	<main class="px-4">
+		<SectionContainer class=" py-44 pb-32">
+			<img 
+			class="rounded-full size-12 mb-4"
+			src="https://avatars.githubusercontent.com/u/60989519?v=4" 
+			alt="mi foto"
+			/>
+		<h1 class="text-white text-3xl lg:text-4xl md:text-4xl font-bold flex justify-center flex-row gap-x-4
+		pb-6  lg:pb-10">
+			Hey, soy Oliver 
+		<a href="https://www.linkedin.com/in/oliver-jol%C3%B3n-marin-068459157/" target="_blank"
+			rel="noopener"
+			class="flex justify-center items-center">
+			<div class="text-white flex justify-center items-center ">
+				<Badge>Disponible para trabajar</Badge></h1>
+			
+			</div>
+		</a>	
+		<h2 class="text-xl opacity-80x pb-4">
+		<span class="text-2xl text-wrap max-w-[700px]">
+			+1 año de experiencia. 
+		</span>
+		<span class="text-xl lg:text-yellow-200/90">Desarrollador Junior.</span>
+			Especializado en crear aplicaciones Web.
+		</h2>
+		
+
+			<nav class="flex gap-2 mb-20 flex-wrap">
+				<SocialPill href="https://www.linkedin.com/in/oliver-jol%C3%B3n-marin-068459157/">
+					<LinkedInIcon class="size-4 md:size-6"/>
+					LinkedIn
+				</SocialPill>
+				<SocialPill href="https://github.com/Damianjolon">
+					<GitHubIcon class="size-4 md:size-6"/>
+					GitHub
+				</SocialPill>
+				<SocialPill href="mailto:damianjolon@gmail.com">
+					<MailIcon class="size-4 md:size-6"/>
+					damianjolon@gmail.com
+				</SocialPill>
+
+
+
+			</nav>
+			
+	</SectionContainer>
+	
+
+		<SectionContainer id="experiencia">
+			<h2 class="text-3xl font-semibold mb-10 flex gap-x-3 items-center">
+				<BriefCase class="size-7"/>
+				Experiencia Laboral</h2>
+			<Experience />
+
+			<SectionContainer id="proyectos">
+				<h2 class="text-3xl font-semibold mb-10 flex gap-x-3 items-center">
+					<CodeIcon class="size-7"/>
+					Proyectos
+				</h2>
+				<Projects />
+
+	</SectionContainer>
+	</main>
+
+</Layout>
+

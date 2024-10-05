@@ -1,0 +1,39 @@
+---
+import { date } from "astro:schema"
+import ExperienceItem from './ExperienceItem.astro'
+
+
+const EXPERIENCE=[
+    {
+        date:'Febrero - Julio 2023',
+        title: 'Implementador de Software | PlusTi, Guatemala',
+        description: 'Capacitación para implementar software. Realizar seguimiento y dar soporte a los clientes y usuarios, monitoreo para control de lavado de dinero y fraudes, creaciones de workflows.',
+        link: '#'
+    },
+    {
+        date:'Agosto - Noviembre 2018',
+        title: 'Digitador | INE, Guatemala',
+        description: 'Digitación de encuestas, visitas a instituciones de gobierno, ingreso de información de empleados públicos para estadísticas del censo.',
+        link: '#'
+    },
+    {
+        date:'Noviembre 2016',
+        title: 'Prácticas de Desarrollo de Software | MIDES, Guatemala',
+        description: 'Interacción de Bases de Datos, Introducción SQL Server,Conceptos Básicos de SQL Server.',
+        link: '#'
+    },
+]
+---
+
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">    
+    {
+        EXPERIENCE.map(experience=>(
+        <li class="mb-10 ms-4">
+            <ExperienceItem {...experience}/>
+        </li>
+        ))
+    }              
+    
+</ol>
+
